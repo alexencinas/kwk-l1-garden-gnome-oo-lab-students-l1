@@ -28,16 +28,16 @@ class Quiz
     puts "What #{event} took place in the #{timeline}?"
     answer = gets.chomp.downcase
     
-    if answer == friend.romantic_partner
+    if answer == timeline.event
       puts "Thats correct!"
     else 
-      puts "Oops! #{friend.name}'s actual romantic partner is #{friend.romantic_partner}."
+      puts "Oops! The #{event} took place in the #{timeline}."
     end 
-  end #end quiz_friend
+  end #end quiz_timeline
   
   def self.start_quiz
-    @@group_of_friends.each do |friend|
-      self.quiz_friend(friend)
+    @@timelines.each do |timeline|
+      self.quiz_timeline(timeline)
     end 
     
     puts "Quiz over!"
@@ -46,7 +46,7 @@ end
 
 
 #adding friends
-Quiz.add_friend(Friends.new("chandler", "monica"))
+Quiz.add_friend(Friends.new("", "monica"))
 Quiz.add_friend(Friends.new("ross", "rachel"))
 
 #creates the quiz questions
