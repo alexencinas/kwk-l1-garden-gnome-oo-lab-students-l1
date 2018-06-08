@@ -25,7 +25,7 @@ class Quiz
   end 
   
   def self.quiz_timeline(timeline)
-    puts "What event took place in the #{timeline}?"
+    puts "What event took place in the #{timeline.timeline}?"
     answer = gets.chomp.downcase
     
     if answer == timeline.event
