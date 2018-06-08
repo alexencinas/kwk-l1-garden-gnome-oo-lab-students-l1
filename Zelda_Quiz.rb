@@ -46,8 +46,8 @@ end
 
 
 #adding friends
-Quiz.add_timeline(Zelda.new("Adult Timeline", "Flooding"))
-Quiz.add_timeline(Zelda.new("Child Timeline", "Twilight"))
+Quiz.add_timeline(Zelda.new("adult timeline", "flooding"))
+Quiz.add_timeline(Zelda.new("child timeline", "twilight"))
 
 #starts the quiz 
 Quiz.start_quiz
