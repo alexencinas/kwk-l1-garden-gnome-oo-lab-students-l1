@@ -25,7 +25,7 @@ class Quiz
   end 
   
   def self.quiz_timeline(timeline)
-    puts "What #{event took place in the #{timeline}?"
+    puts "What event took place in the #{timeline}?"
     answer = gets.chomp.downcase
     
     if answer == timeline.event
@@ -47,7 +47,7 @@ end
 
 #adding friends
 Quiz.add_friend(Friends.new("Adult Timeline", "Flooding"))
-Quiz.add_friend(Friends.new("ross", "rachel"))
+Quiz.add_friend(Friends.new("", "rachel"))
 
 #creates the quiz questions
 # Quiz.quiz_friend(Friends.new("chandler", "monica"))
