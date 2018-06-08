@@ -31,7 +31,7 @@ class Quiz
     if answer == timeline.event
       puts "Thats correct!"
     else 
-      puts "Oops! The #{event} took place in the #{timeline}."
+      puts "Oops! The #{timeline.event} took place in the #{timeline.timeline}."
     end 
   end #end quiz_timeline
   
