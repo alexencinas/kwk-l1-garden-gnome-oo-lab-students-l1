@@ -47,7 +47,7 @@ end
 
 #adding friends
 Quiz.add_friend(Friends.new("Adult Timeline", "Flooding"))
-Quiz.add_friend(Friends.new("", "rachel"))
+Quiz.add_friend(Friends.new("Child Timeline", ""))
 
 #creates the quiz questions
 # Quiz.quiz_friend(Friends.new("chandler", "monica"))
